@@ -11,11 +11,15 @@ gem "rack-cors"
 
 group :development, :test do
   gem "pry-byebug"
-  gem 'rspec-rails', '~> 3.5'
+  gem "rspec-rails", "~> 3.5"
 end
 
 group :development do
   gem "listen", "~> 3.0.5"
+end
+
+group :test do
+  gem "shoulda-matchers", "~> 3.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
